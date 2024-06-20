@@ -5,17 +5,30 @@ const Card = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm">
-          <div className="card">
-            <img className="card-img-top" src="..." alt="Card image cap" />
+        <div className="col-sm-4">
+          <div className="card text-white bg-danger mb-3">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+              <h5 className="card-title">Card 1</h5>
+              <p className="card-text">This is a red card with the number 1.</p>
             </div>
           </div>
         </div>
-        {/* Repeat for the other two cards */}
+        <div className="col-sm-4">
+          <div className="card text-white bg-success mb-3">
+            <div className="card-body">
+              <h5 className="card-title">Card 2</h5>
+              <p className="card-text">This is a green card with the number 2.</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-4">
+          <div className="card text-white bg-primary mb-3">
+            <div className="card-body">
+              <h5 className="card-title">Card 3</h5>
+              <p className="card-text">This is a blue card with the number 3.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
